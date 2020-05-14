@@ -20,6 +20,7 @@ class MusicListenerServiceImplementation :
     Service(),
     MusicListenerService {
 
+    /** MediaPlayer class responsible to audio and video in android **/
     private lateinit var mediaPlayer: MediaPlayer
     private var isPaused: Boolean = false
     private var currentMusic: String? = null
@@ -75,6 +76,7 @@ class MusicListenerServiceImplementation :
     override var currentTime: Int = 0
         get() = if (mediaPlayer.isPlaying || isPaused) mediaPlayer.currentPosition else 0
 
+    /** change state mediaPlayer of idle to started**/
     override fun play(path: String) {
 
         if (path.isBlank()) return;
