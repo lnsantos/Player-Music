@@ -12,7 +12,7 @@
 
         <service android:name=".core.services.MusicListenerServiceImplementation" android:enabled="true" android:exported="true"/>
 
-        <activity android:name=".ui.MainActivity">
+        <activity android:name="com.nepoapp.nepoplay20.ui.view.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
